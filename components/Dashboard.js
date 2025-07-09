@@ -26,7 +26,7 @@ export default function Dashboard({ transactions }) {
     const currentSummary = transactions.reduce(
       (acc, transaction) => {
         const amount = Number(transaction.amount);
-        if (transaction.type === 'income') {
+        if (transaction.type === 'income'){
           acc.totalIncome += amount;
         } else {
           acc.totalExpenses += amount;
